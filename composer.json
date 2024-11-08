@@ -1,0 +1,27 @@
+{
+    "name": "iboxs/deliver",
+    "description": "快递/外卖集成包",
+    "type": "1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "itlattice",
+            "email": "itlattice@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-curl":"*",
+        "iboxs/basic": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "iboxs\\redis\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "iboxs\\deliver\\Deliver::install"
+        ]
+    }
+}
