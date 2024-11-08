@@ -12,7 +12,8 @@
     "require": {
         "php": ">=7.0",
         "ext-curl":"*",
-        "iboxs/basic": "*"
+        "iboxs/basic": "*",
+        "iboxs/redis": "*"
     },
     "autoload": {
         "psr-4": {
@@ -21,7 +22,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "iboxs\\deliver\\Deliver::install"
+            "iboxs\\deliver\\Delivery::install"
         ]
     }
 }

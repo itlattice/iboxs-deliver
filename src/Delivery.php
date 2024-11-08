@@ -1,10 +1,11 @@
 <?php
 
 namespace iboxs\deliver;
-
-class Deliver
+/*
+ * 即时配送
+ */
+class Delivery
 {
-
     public static function install(){
 
     }
